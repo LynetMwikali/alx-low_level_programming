@@ -1,8 +1,12 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/*
+/**
  * main-entry point for the program
+ *
+ * description:'program to tell if n is zero,negative or positive
+ *
+ * Return:always 0-success
  */
 int main(void)
 {
