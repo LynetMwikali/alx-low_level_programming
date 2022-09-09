@@ -15,13 +15,13 @@ int main(void)
 	{
 		printf("Last digit of %d is %d and is greater than 5\n",n,ls);
 	}
+	else if (ls == 0)
+	{
+		printf("Last digit of %d is 0 and 0\n",n);
+	}
 	else if (ls < 6)
 	{
 		printf("Last digit of %d is %d and is less than 6 and not 0\n",n,ls);
-	}
-	else if (ls == 0)
-	{
-		printf("Last digit of %d is 0 and is 0\n",n);
 	}
 	return (0);
 }
