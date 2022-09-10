@@ -1,6 +1,7 @@
 #include<stdio.h>
 /**
- * return 0 if no errors
+ *main-a program to print out a statement
+*Return:Always 0 if no errors
  */
 int main(void)
 {
