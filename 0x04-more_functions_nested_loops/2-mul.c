@@ -1,19 +1,13 @@
 #include "main.h"
+
 /**
-*main-a program that multiplies two integers
-*@a:digit to be multiplied
-*@b:digit to be multiplied
-*Return: Always 0.
-**/
-int mul(int a, int b);
+*mul - multiplies two numbers
+*@a: first number
+*@b: second number
+*Return: returns result
+*/
+
+int mul(int a, int b)
 {
-
-int result;
-
-result = a * b;
-
-return result;
+	return (a * b);
 }
-
-
-
