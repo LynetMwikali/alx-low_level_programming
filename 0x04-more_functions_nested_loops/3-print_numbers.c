@@ -7,13 +7,11 @@
 *
 *Return: returns nothing
 */
-
 void print_numbers(void)
 {
-	int n;
+	int a;
 
-	for (n = 48; n < 58; n++)
-	{
-		putchar(n);
-	}
-	putchar(10);
+	for (a = '0'; a <= '9'; a++)
+		_putchar(a);
+	_putchar('\n');
+}
