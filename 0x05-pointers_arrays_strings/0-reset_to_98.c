@@ -1,14 +1,12 @@
 #include "main.h"
+
 /**
- * main-function that updates the value it points to 98(int)
- * void reset_to_98: updtaes the value to 98
- * Return: Always 0.
- */
+*reset_to_98 - resets the value of given integer to 98
+*@n: parameter
+*Return : nothing
+*/
 
-int main(void)
+void reset_to_98(int *n)
 {
-	int n = 98;
-	int *p = &n;
-
-	return (0);
+	*n = 98;
 }
