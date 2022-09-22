@@ -27,7 +27,7 @@ void print_array(int *a, int n)
 
 /**
  * main - check the code
-*
+ *
  * Return: Always 0.
  */
 int main(void)
