@@ -1,52 +1,40 @@
 #include "main.h"
-/**
- * _strlen - give the length of a string
- * @s: the string
- *
- * Return: the length of a string
- */
-int _strlen(char *s)
-{
-	int i;
-
-	for (i = 0 ; s[i] != '\0' ; i++)
-		;
-	return (i);
-}
-#include "holberton.h"
-#include <stdlib.h>
 #include <stdio.h>
+#include <stdlib.h>
+#include <stddef.h>
+
 /**
- * _strdup - returns a pointer which contains a copy of the string
- * given as a parameter
- * @str: The string to print
+ * _strdup - Duplicates a string
+	* @str: The pointer to the string to duplicate
  *
- *
- * Return: a pointer to the duplicated string or NULL if insufficient
- * memory was available
+	*Return: Duplictaed string
  */
 char *_strdup(char *str)
 {
-	int i;
-	char *copy;
+	char *b;
+	unsigned int i, j;
 
-	if (str == '\0')
+	i = 0, j = 1;
+
+	if (str == NULL)
+	return (NULL);
+
+	while (str[j] != '\0')
 	{
-		return ('\0');
+		j++;
 	}
-	i = _strlen(str);
-	copy = malloc(sizeof(char) * i + 1);
-	if (copy == '\0')
+
+	b = malloc(j * sizeof(char) + 1);
+
+	if (b == NULL)
+	return (NULL);
+
+	while (i < j)
 	{
-		return ('\0');
+		b[i] = str[i];
+		i++;
 	}
-	else
-	{
-		for (i = 0 ; str[i] != '\0' ; i++)
-		{
-			copy[i] = str[i];
-		}
-	}
-	copy[i] = '\0';
-	return (copy);
+
+	b[i] = '\0';
+	return (b);
 }
